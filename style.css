@@ -106,6 +106,8 @@ h1{
     padding-block: 20px;
     font-weight: 600;
     line-height: 130%;
+    animation: float-in 1s linear;
+    
 }
 h1 span{
     color: var(--green);
@@ -114,15 +116,16 @@ p{
     font-size: 1rem;
     color: var(--light-black);
     line-height: 150%;
-    animation: float-in 1s linear;
-    animation-timeline: view();
-    animation-range: entry 0;
+
+}
+.hero-section .container p{
+    animation: float-in 1.3s linear;
 }
 .hero-section .container .email-field{
     margin-top: 50px;
     margin-bottom: 25px;
     display: flex;
-
+    animation: float-in 1.5s linear;
     align-items: center;
     gap: 10px;
 }
@@ -145,7 +148,7 @@ p{
 .hero-section .container .image img{
     object-fit: cover;
     width: 100%;
-
+    animation: fade-in 1.5s linear;
     
 }
 
@@ -200,10 +203,9 @@ h2{
     font-size: 1.2rem;
     padding-block: 30px;
     line-height: 150%;
-    animation: float-in 1s linear;
-    animation-timeline: view();
-    animation-range: entry 0;
+    
 }
+
 section.expert-section .container .image{
     background-color: var(--light-bg);
     border-bottom-right-radius: 30px;
@@ -281,9 +283,6 @@ section.services-section .container .image{
     background-color: var(--light-bg);
     border-bottom-right-radius: 30px;
     border-top-left-radius: 30px;
-    animation: fade-in 2s linear;
-    animation-timeline: view();
-    animation-range: entry 0;
 }
 section.services-section .container .image img{
     object-fit: cover;
@@ -305,9 +304,6 @@ section.testimonial-section .container .grid-container .col{
     padding: 20px;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
-    animation: fade-in 2s linear;
-    animation-timeline: view();
-    animation-range: entry 0;
 }
 section.testimonial-section .container .grid-container .col .id{
     display: flex;
@@ -492,33 +488,21 @@ footer ul{
 
 }
 /************** ANIMATION ***********/
-.animation-fade-in-1{
-    animation: fade-in 2s linear;
+section .container .content, section.testimonial-section h2, section.testimonial-section p,section.team-section .grid-container .col{
+    animation: appear 2s linear;
+    animation-timeline: view();
+    animation-range: entry 20%;
 }
-.animation-fade-in-2{
-    animation: fade-in 2.5s linear;
-}
-.animation-fade-in-3{
-    animation: fade-in 2.7s linear;
-}
-.animation-fade-in-4{
-    animation: fade-in 3s linear;
-}
-
-.animation-float-in-1{
-    animation: float-in 1s linear;
-}
-.animation-float-in-2{
-    animation: float-in 1.5s linear;
-}
-.animation-float-in-3{
-    animation: float-in 2s linear;
-}
-
-.animation-fade-in-1-scroll{
+section .container .image,section.testimonial-section .container .grid-container .col{
     animation: fade-in 2s linear;
     animation-timeline: view();
-    animation-range: entry 0;
+    animation-range: entry 30%;
+}
+section.hero-section .container .image{
+    animation: fade-in 2s linear;
+}
+.hero-section .container .content{
+    animation: float-in 1.5 linear;
 }
 
 @keyframes fade-in {
@@ -534,6 +518,8 @@ footer ul{
     }
 }
 
+
+
 @keyframes float-in {
     0%{
         transform: translateY(60px);
@@ -546,6 +532,16 @@ footer ul{
     100%{
         transform: translateY(0);
         opacity: 1;
+    }
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
