@@ -1,0 +1,197 @@
+@media (width >= 420px){
+
+}
+
+@media (width >= 480px){
+    section.expert-section .container .image{
+        width: 80%;
+    }
+    section.hero-section .image{
+        width: 80%;
+    }
+    section.services-section .image{
+        width: 80%;
+    }
+    section.action-section .image{
+        width: 80%;
+    }
+}
+
+@media (width >= 576px){
+    footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (width >= 640px){
+    section,header,footer{
+        padding-inline: 40px;
+    }
+}
+
+@media (width >= 768px){
+    section,header,footer{
+        padding-inline: 50px;
+    }
+   /* h1{
+        font-size: 2.586rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }*/
+    .email-field button{
+        width: 250px;
+    }
+}
+
+@media (width >= 870px){
+    section{
+       margin-bottom: 60px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    section.hero-section .container{
+        flex-direction: row;
+    }
+    section.hero-section .container .image{
+        width: 100%;
+    }
+    section.sponsor-section .container{
+        grid-template-columns: repeat(6, 1fr);
+    }
+    section.expert-section .container{
+        flex-direction: row;
+    }
+    section.expert-section .container .image{
+        width: 200%;
+    }
+    section.services-section .container{
+        flex-direction: row-reverse;
+    }
+    section.services-section .container .image{
+        width: 100%;
+    }
+    section.testimonial-section .container .grid-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    section.team-section .grid-container{
+        grid-template-columns: repeat(3,1fr);
+        gap: 5px;
+    }
+    section.team-section h2{
+        width: 420px;
+    }
+    section.action-section .container{
+        flex-direction: row;
+    }
+    section.action-section .container .image{
+        width: 100%;
+    }
+    footer .container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    header .logo{
+        font-size: 30px;
+    }
+    header .menu-icon{
+        display: none;
+    }
+    header{
+        align-items: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: initial;
+        transform: translateY(0);
+        background-color: transparent;
+        box-shadow: none;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin-left: 50px;
+    }
+    nav ul button.get-started-btn{
+        width: auto;
+    }
+}
+
+@media (width >= 1000px){
+    section,header,footer{
+        padding-inline: 80px;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 1.4rem;
+    }
+    section.expert-section .container{
+        flex-direction: row;
+        gap: 40px;
+    }
+   
+    section.services-section .container{
+        flex-direction: row-reverse;
+        gap: 40px;
+    }
+  
+    section.action-section .container{
+        flex-direction: row;
+        gap: 40px;
+    }
+    section.action-section .container .image{
+        width: 70%;
+    }
+
+}
+
+@media (width >= 1200px){
+   
+    section,header,footer{
+        padding-inline: 100px;
+        
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 1.52rem;
+    }
+}
+
+@media (width >= 1300px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main,header,footer{
+        width: 1350px;
+    }
+
+    section.expert-section .container .image{
+        width: 130%;
+    }
+
+    section.services-section .container .image{
+        width: 70%;
+    }
+
+    section.action-section .container .image{
+        width: 90%;
+    }
+    section.action-section .container .image{
+        width: 70%;;
+    }
+    
+}
