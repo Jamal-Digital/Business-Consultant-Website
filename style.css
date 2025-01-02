@@ -505,7 +505,7 @@ footer ul{
 
 .animation-fade-in-1-scroll{
     animation: fade-in 2s linear;
-    animation-timeline: scroll(y);
+    animation-timeline: view();
     animation-range: entry 0;
 }
 
