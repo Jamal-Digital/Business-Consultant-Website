@@ -114,6 +114,9 @@ p{
     font-size: 1rem;
     color: var(--light-black);
     line-height: 150%;
+    animation: float-in 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 .hero-section .container .email-field{
     margin-top: 50px;
@@ -197,6 +200,9 @@ h2{
     font-size: 1.2rem;
     padding-block: 30px;
     line-height: 150%;
+    animation: float-in 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 section.expert-section .container .image{
     background-color: var(--light-bg);
@@ -275,6 +281,9 @@ section.services-section .container .image{
     background-color: var(--light-bg);
     border-bottom-right-radius: 30px;
     border-top-left-radius: 30px;
+    animation: fade-in 2s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 section.services-section .container .image img{
     object-fit: cover;
@@ -296,6 +305,9 @@ section.testimonial-section .container .grid-container .col{
     padding: 20px;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
+    animation: fade-in 2s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 section.testimonial-section .container .grid-container .col .id{
     display: flex;
@@ -494,13 +506,13 @@ footer ul{
 }
 
 .animation-float-in-1{
-    animation: float-in 1.8s linear;
+    animation: float-in 1s linear;
 }
 .animation-float-in-2{
-    animation: float-in 2.2s linear;
+    animation: float-in 1.5s linear;
 }
 .animation-float-in-3{
-    animation: float-in 2.6s linear;
+    animation: float-in 2s linear;
 }
 
 .animation-fade-in-1-scroll{
